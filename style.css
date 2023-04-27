@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.todo {
+  background-color: tomato;
+  width: 25%;
+  height: 500px;
+  transition: .5s all ease-in;
+}
+
+.doing {
+  background-color: tomato;
+  width: 25%;
+  transition: .5s all ease-in;
+}
+
+.done {
+  background-color: tomato;
+  width: 25%;
+  transition: .5s all ease-in;
+}
+
+.todo:hover {
+  width: 35%;
+}
+
+.doing:hover {
+  width: 35%;
+  transition: .5s all ease-in;
+}
+
+.done:hover {
+  width: 35%;
+  transition: .5s all ease-in;
+}
