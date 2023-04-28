@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+}
+
+#draggable {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  background: black;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -5,35 +16,173 @@ body {
   gap: 20px;
 }
 
+.main {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  align-items: flex-start;
+}
+
 .todo {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
   background-color: tomato;
   width: 25%;
-  height: 500px;
-  transition: .5s all ease-in;
+  transition: 0.5s all ease-in;
 }
 
 .doing {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
   background-color: tomato;
   width: 25%;
-  transition: .5s all ease-in;
+  transition: 0.5s all ease-in;
 }
 
 .done {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
   background-color: tomato;
   width: 25%;
-  transition: .5s all ease-in;
+  transition: 0.5s all ease-in;
 }
 
 .todo:hover {
-  width: 35%;
+  width: 26%;
 }
 
 .doing:hover {
-  width: 35%;
-  transition: .5s all ease-in;
+  width: 26%;
+  transition: 0.5s all ease-in;
 }
 
 .done:hover {
-  width: 35%;
-  transition: .5s all ease-in;
+  width: 26%;
+  transition: 0.5s all ease-in;
+}
+
+.tdmaincardtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.tdmaincardbox{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  resize: none;
+  width: auto;
+  height: auto;
+  resize: none;
+}
+
+.tdmaincardadd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.domaincardtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.domaincardbox{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  resize: none;
+}
+
+.domaincardadd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.donemaincardtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.donemaincardbox{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.donemaincardadd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.cardtitle{
+  padding: 12px 0;
+}
+
+.cardinfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.cardinfo .iconset{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+
+
+.addcard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.imgpro img{
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50px;
 }
