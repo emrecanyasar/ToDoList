@@ -26,7 +26,7 @@ body {
   align-items: flex-start;
 }
 
-.todo {
+.todocard {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -35,7 +35,7 @@ body {
   transition: 0.5s all ease-in;
 }
 
-.doing {
+.doingcard {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -44,7 +44,7 @@ body {
   transition: 0.5s all ease-in;
 }
 
-.done {
+.donecard {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -53,16 +53,16 @@ body {
   transition: 0.5s all ease-in;
 }
 
-.todo:hover {
+.todocard:hover {
   width: 26%;
 }
 
-.doing:hover {
+.doingcard:hover {
   width: 26%;
   transition: 0.5s all ease-in;
 }
 
-.done:hover {
+.donecard:hover {
   width: 26%;
   transition: 0.5s all ease-in;
 }
@@ -114,6 +114,12 @@ body {
   border-radius: 10px;
   padding: 12px;
   resize: none;
+}
+
+.dropzone{
+  background-color: white;
+  min-height: 100px;
+  margin: 0 12px;
 }
 
 .domaincardadd {
