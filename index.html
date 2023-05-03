@@ -10,7 +10,7 @@
   <body>
     <div class="main">
       <div class="todocard">
-        <div   class="tdmaincardtitle">
+        <div class="tdmaincardtitle">
           <h3>To do</h3>
           <svg
             width="18"
@@ -25,25 +25,46 @@
             />
           </svg>
         </div>
-        <div ondragover="onDragOver(event)" ondrop="onDrop(event)" class="dropzone">
-          <div  id="draggable-1" ondragstart="onDragStart(event)"  draggable="true" class="tdmaincardbox">
+        <div
+          ondragover="onDragOver(event)"
+          ondrop="onDrop(event)"
+          class="dropzone"
+          id="tddropzone"
+        >
+          <div
+            id="draggable-1"
+            ondragstart="onDragStart(event)"
+            draggable="true"
+            class="tdmaincardbox"
+          >
             <div class="cardmarker">
-                <h3>Javascript</h3>
+              <h3>Javascript</h3>
             </div>
+            <button id="draggable-1" onclick="onDoing(event)">doing</button>
+          </div>
+          <div
+            id="draggable-2"
+            ondragstart="onDragStart(event)"
+            draggable="true"
+            class="tdmaincardbox"
+          >
+            <div class="cardmarker">
+              <h3>Javascript</h3>
             </div>
-            <div  id="draggable-2" ondragstart="onDragStart(event)"  draggable="true" class="tdmaincardbox">
-              <div class="cardmarker">
-                  <h3>Javascript</h3>
-              </div>
-              </div>
-              <div  id="draggable-3" ondragstart="onDragStart(event)"  draggable="true" class="tdmaincardbox">
-                <div class="cardmarker">
-                    <h3>Javascript</h3>
-                </div>
-                </div>
+          </div>
+          <div
+            id="draggable-3"
+            ondragstart="onDragStart(event)"
+            draggable="true"
+            class="tdmaincardbox"
+          >
+            <div class="cardmarker">
+              <h3>Javascript</h3>
+            </div>
+          </div>
         </div>
         <div class="tdmaincardadd">
-          <div class="addcard">
+          <div onclick="addCard()" class="addcard">
             <svg
               width="14"
               height="14"
@@ -72,7 +93,7 @@
         </div>
       </div>
       <div class="doingcard">
-        <div   class="tdmaincardtitle">
+        <div class="tdmaincardtitle">
           <h3>To do</h3>
           <svg
             width="18"
@@ -87,9 +108,12 @@
             />
           </svg>
         </div>
-        <div ondragover="onDragOver(event)" ondrop="onDrop(event)" class="dropzone">
-
-        </div>
+        <div
+          ondragover="onDragOver(event)"
+          ondrop="onDrop(event)"
+          class="dropzone1"
+          id="doingdropzone"
+        ></div>
         <div class="tdmaincardadd">
           <div class="addcard">
             <svg
@@ -120,7 +144,7 @@
         </div>
       </div>
       <div class="donecard">
-        <div   class="tdmaincardtitle">
+        <div class="tdmaincardtitle">
           <h3>To do</h3>
           <svg
             width="18"
@@ -135,9 +159,11 @@
             />
           </svg>
         </div>
-        <div ondragover="onDragOver(event)" ondrop="onDrop(event)" class="dropzone">
-
-        </div>
+        <div
+          ondragover="onDragOver(event)"
+          ondrop="onDrop(event)"
+          class="dropzone2"
+        ></div>
         <div class="tdmaincardadd">
           <div class="addcard">
             <svg

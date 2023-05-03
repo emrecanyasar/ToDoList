@@ -122,6 +122,18 @@ body {
   margin: 0 12px;
 }
 
+.dropzone1{
+  background-color: white;
+  min-height: 100px;
+  margin: 0 12px;
+}
+
+.dropzone2{
+  background-color: white;
+  min-height: 100px;
+  margin: 0 12px;
+}
+
 .domaincardadd {
   display: flex;
   flex-direction: row;
@@ -185,6 +197,7 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 }
 .imgpro img{
   width: 24px;
