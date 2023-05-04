@@ -39,27 +39,12 @@
           >
             <div class="cardmarker">
               <h3>Javascript</h3>
+              <p>asdasdasdasd</p>
             </div>
-            <button id="draggable-1" onclick="onDoing(event)">doing</button>
-          </div>
-          <div
-            id="draggable-2"
-            ondragstart="onDragStart(event)"
-            draggable="true"
-            class="tdmaincardbox"
-          >
-            <div class="cardmarker">
-              <h3>Javascript</h3>
-            </div>
-          </div>
-          <div
-            id="draggable-3"
-            ondragstart="onDragStart(event)"
-            draggable="true"
-            class="tdmaincardbox"
-          >
-            <div class="cardmarker">
-              <h3>Javascript</h3>
+            <div class="btn">
+              <button id="btn-doing"  class="btn-doing" onclick="onDoing(this.id)">doing</button>
+              <button id="btn-todo"   class="btn-todo" onclick="onTodo(this.id)">todo</button>
+              <button id="btn-done" class="btn-done" onclick="onDone(this.id)">done</button>
             </div>
           </div>
         </div>
@@ -163,6 +148,7 @@
           ondragover="onDragOver(event)"
           ondrop="onDrop(event)"
           class="dropzone2"
+          id="donedropzone"
         ></div>
         <div class="tdmaincardadd">
           <div class="addcard">
